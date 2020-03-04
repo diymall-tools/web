@@ -2,19 +2,14 @@
 		box-sizing: border-box;
 		padding: 0;
 		margin:0;
+    font-family: 'Noto Sans TC', sans-serif;
 	}
 	.carousel{
 		height:80vh;
 		overflow: hidden;
-		z-index: -1;
-	}
-	@media screen and (max-width: 800px) {
-		.carousel{
-		height:30vh;
-		overflow: hidden;
-	}
 		
 	}
+	
 	.navbar{
 		background-color: #55a1ab;
 		border:2px solid #55a1ab;
@@ -33,7 +28,7 @@
 	}
   .map{
     position: absolute;
-    top:-35%;
+    top:-25%;
     left:40%;
   }
 	
@@ -54,7 +49,7 @@
 		border-radius: 10px;
 	}
 	.shop01{
-		background-color: #5e4926;
+		background-color: #55a1ab;
 	}
 	.shop04{
 		background-color: #26585e;
@@ -62,6 +57,37 @@
 	.shop06{
 		background-color: #55a1ab;
 	}
+  .map i{
+    color:#b1d9de;
+  }
+ 
+  .card1{
+    position: relative;
+    
+  }
+ .company{
+  color:#26585e;
+  background-color: #b1d9de;
+  position: absolute;
+  width:500px;
+  top:-500px;
+  left:calc(50% - 250px);
+  z-index: 1;
+  height:200px;
+ }
+  @media screen and (max-width: 800px) {
+    .carousel{
+    height:30vh;
+    overflow: hidden;
+
+  }
+   .map i{
+    display: none;
+  }
+  .card1{
+    display: none;
+  }
+  }
 	/*SWIPER*/
 	 .swiper-container {
       width: 100%;
@@ -157,6 +183,40 @@
     footer a{
       color:white;
     }
+    footer .rounded-circle{
+      border:1px solid #ffffff;
+      background-color: #55a1ab;
+      
+      width: 60px;
+      height:60px;
+      transition-property: background-color,color;
+      transition-duration: 0s;
+      transition-delay: 0s;
+    }
+    footer .rounded-circle:hover{
+      border:1px solid #ffffff;
+      transition-property: background-color,color;
+      transition-duration: 0s;
+      transition-delay: 0s; 
+      background-color:#26585e;
+      color: #55a1ab;
+      animation: move .16s infinite alternate;
+    }
+    footer li:hover{
+      animation: move .16s infinite alternate;
+    }
+    
+    @keyframes move {
+  0% { transform: translate(-1px, 1px) rotate(-1deg); }
+  33% { transform: translate(0px, 0px) rotate(-0deg); }
+  66% { transform: translate(-1px, 1px) rotate(-1deg); }
+  100% { transform: translate(0px, 0px) rotate(-0deg); }
+    }
+    /**FORM**/
+    .myborder{
+      border:2px solid #55a1ab;
+    }
+
 /**ANIMATION**/
 .rotate-vert-center {
   -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
