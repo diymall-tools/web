@@ -55,7 +55,7 @@
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/banner01.jpg" class="d-block w-100" alt="自助五金BANNER01-家具組裝">
+      <img src="img/banner01.jpg" class="d-block w-100 " alt="自助五金BANNER01-家具組裝">
       
     </div>
     <div class="carousel-item">
@@ -192,16 +192,7 @@
                 slider3</div>
             <div class="swiper-slide" ><img id="myPicture3" src="" alt="自助產品-手推車" style="width: 100%;height: 100%;">
                 slider4</div>
-             <div class="swiper-slide" ><img id="myPicture4" src="" alt="自助產品-馬桶蓋" style="width: 100%;height: 100%;">
-                slider5</div>
-            <div class="swiper-slide" ><img id="myPicture5" src="" alt="自助產品-浴鏡、浴櫃" style="width: 100%;height: 100%;">
-                slider6</div>
-            <div class="swiper-slide" ><img id="myPicture6" src="" alt="自助產品-扶手" style="width: 100%;height: 100%;">
-                slider7</div>
-            <div class="swiper-slide" ><img id="myPicture7" src="" alt="自助產品-衣架" style="width: 100%;height: 100%;">
-                slider8</div>
-            <div class="swiper-slide" ><img id="myPicture8" src="" alt="自助產品-排風扇" style="width: 100%;height: 100%;">
-                slider9</div>    
+             
            
         </div>
     </div>
@@ -316,7 +307,7 @@
         var mySwiper2 = new Swiper('#swiper-container2', {
             watchSlidesProgress: true,
             watchSlidesVisibility: true,
-            loop: true,
+            
             slidesPerView: 5,
              breakpoints: {
     // when window width is >= 320px
@@ -339,21 +330,10 @@
         })
     </script>
     
- <script type="text/javascript">
-<!--  //隨機播放陣列中指定的圖檔
-        var jsImg = new Array("p(1).jpg","p(2).jpg","p(3).jpg","p(4).jpg","p(5).jpg","p(6).jpg");
-        //設定每兩秒執行一次randomImg() ，此行要在 function 之外
-        setInterval("randomImg()",2000);
-        function randomImg(){
-        //陣列的長度 * 介於0~1間數字 ，然後在取 floor 當照片索引值
-        var imgIndex = Math.floor(Math.random()*jsImg.length);
-        document.getElementByID("my").innerHTML  = "<img src='"+jsImg[imgIndex]+"' width=200 height=200>";
-        }      
 
-</script>
 <script>
         window.onload = choosePic;
-        setInterval("choosePic()",2000);
+        setInterval("choosePic()",3000);
 function choosePic() {
     var myPix = new Array("img/product/p (1).jpg","img/product/p (2).jpg","img/product/p (3).jpg","img/product/p (4).jpg","img/product/p (5).jpg","img/product/p (6).jpg","img/product/p (7).jpg","img/product/p (8).jpg","img/product/p (9).jpg","img/product/p (10).jpg","img/product/p (11).jpg","img/product/p (12).jpg","img/product/p (13).jpg","img/product/p (14).jpg","img/product/p (15).jpg","img/product/p (16).jpg","img/product/p (17).jpg","img/product/p (18).jpg","img/product/p (19).jpg","img/product/p (20).jpg","img/product/p (21).jpg","img/product/p (22).jpg","img/product/p (23).jpg","img/product/p (24).jpg","img/product/p (25).jpg","img/product/p (26).jpg","img/product/p (27).jpg","img/product/p (28).jpg","img/product/p (29).jpg","img/product/p (30).jpg","img/product/p (31).jpg","img/product/p (32).jpg","img/product/p (33).jpg","img/product/p (34).jpg","img/product/p (35).jpg","img/product/p (36).jpg","img/product/p (37).jpg","img/product/p (38).jpg","img/product/p (39).jpg","img/product/p (40).jpg","img/product/p (41).jpg","img/product/p (42).jpg","img/product/p (43).jpg","img/product/p (44).jpg","img/product/p (45).jpg","img/product/p (46).jpg","img/product/p (47).jpg","img/product/p (48).jpg","img/product/p (49).jpg","img/product/p (50).jpg","img/product/p (51).jpg","img/product/p (52).jpg","img/product/p (53).jpg","img/product/p (54).jpg","img/product/p (55).jpg","img/product/p (56).jpg","img/product/p (57).jpg","img/product/p (58).jpg","img/product/p (59).jpg","img/product/p (60).jpg","img/product/p (61).jpg","img/product/p (62).jpg","img/product/p (63).jpg","img/product/p (64).jpg","img/product/p (65).jpg","img/product/p (66).jpg","img/product/p (67).jpg","img/product/p (68).jpg","img/product/p (69).jpg","img/product/p (70).jpg","img/product/p (71).jpg","img/product/p (72).jpg","img/product/p (73).jpg","img/product/p (74).jpg","img/product/p (75).jpg","img/product/p (76).jpg","img/product/p (77).jpg","img/product/p (78).jpg","img/product/p (79).jpg","img/product/p (80).jpg","img/product/p (81).jpg","img/product/p (82).jpg","img/product/p (83).jpg","img/product/p (84).jpg","img/product/p (85).jpg","img/product/p (86).jpg","img/product/p (87).jpg","img/product/p (88).jpg","img/product/p (89).jpg","img/product/p (90).jpg","img/product/p (91).jpg","img/product/p (92).jpg","img/product/p (93).jpg","img/product/p (94).jpg","img/product/p (95).jpg","img/product/p (96).jpg","img/product/p (97).jpg","img/product/p (98).jpg","img/product/p (99).jpg","img/product/p (100).jpg","img/product/p (101).jpg","img/product/p (102).jpg","img/product/p (103).jpg","img/product/p (104).jpg","img/product/p (105).jpg","img/product/p (106).jpg","img/product/p (107).jpg","img/product/p (108).jpg","img/product/p (109).jpg","img/product/p (110).jpg","img/product/p (111).jpg","img/product/p (112).jpg","img/product/p (113).jpg","img/product/p (114).jpg","img/product/p (115).jpg","img/product/p (116).jpg","img/product/p (117).jpg","img/product/p (118).jpg","img/product/p (119).jpg","img/product/p (120).jpg","img/product/p (121).jpg","img/product/p (122).jpg","img/product/p (123).jpg","img/product/p (124).jpg","img/product/p (125).jpg","img/product/p (126).jpg","img/product/p (127).jpg","img/product/p (128).jpg","img/product/p (129).jpg","img/product/p (130).jpg","img/product/p (131).jpg","img/product/p (132).jpg","img/product/p (133).jpg","img/product/p (134).jpg","img/product/p (135).jpg","img/product/p (136).jpg","img/product/p (137).jpg","img/product/p (138).jpg","img/product/p (139).jpg","img/product/p (140).jpg","img/product/p (141).jpg","img/product/p (142).jpg","img/product/p (143).jpg","img/product/p (144).jpg","img/product/p (145).jpg","img/product/p (146).jpg","img/product/p (147).jpg","img/product/p (148).jpg","img/product/p (149).jpg","img/product/p (150).jpg","img/product/p (151).jpg","img/product/p (152).jpg","img/product/p (153).jpg","img/product/p (154).jpg","img/product/p (155).jpg","img/product/p (156).jpg","img/product/p (157).jpg","img/product/p (158).jpg","img/product/p (159).jpg","img/product/p (160).jpg");
     var randomNum = Math.floor((Math.random() * myPix.length));
@@ -365,15 +345,7 @@ function choosePic() {
      var randomNum3 = Math.floor((Math.random() * myPix.length));
      document.getElementById("myPicture3").src = myPix[randomNum3];
      var randomNum4 = Math.floor((Math.random() * myPix.length));
-     document.getElementById("myPicture4").src = myPix[randomNum4];
-     var randomNum5 = Math.floor((Math.random() * myPix.length));
-     document.getElementById("myPicture5").src = myPix[randomNum5];
-     var randomNum6 = Math.floor((Math.random() * myPix.length));
-     document.getElementById("myPicture6").src = myPix[randomNum6];
-     var randomNum7 = Math.floor((Math.random() * myPix.length));
-     document.getElementById("myPicture7").src = myPix[randomNum7];
-     var randomNum8 = Math.floor((Math.random() * myPix.length));
-     document.getElementById("myPicture8").src = myPix[randomNum8];
+    
 }
 </script>
 <script>  
