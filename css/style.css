@@ -3,6 +3,8 @@
 		padding: 0;
 		margin:0;
     font-family: 'Noto Sans TC', sans-serif;
+    color:#5e4926;
+    
 	}
 	.carousel{
 		height:80vh;
@@ -216,7 +218,43 @@
     .myborder{
       border:2px solid #55a1ab;
     }
-
+    .contact{
+      background-image:url("../img/form-bg.jpg");
+      background:-webkit-linear-gradient(rgba(85,161,171,0.7), rgba(85,161,171,0.3)),url("../img/form-bg.jpg") center bottom no-repeat;
+      background:-o-linear-gradient(rgba(85,161,171,0.7), rgba(85,161,171,0.3)),url("../img/form-bg.jpg") center bottom no-repeat;
+      background:linear-gradient(rgba(85,161,171,0.7), rgba(85,161,171,0.3))  ,url("../img/form-bg.jpg") center bottom no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: bottom;
+    }
+/**NEWS**/
+#news img{
+  width:100%;
+  padding:0; 
+}
+.main-news{
+  position: relative;
+  height:auto;
+  width: 100%;
+  background-image: url(../img/news01.jpg);
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.main-newstext{
+  position: absolute;
+  bottom: 0px;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(255,255,255,0.5);
+  
+}
+@media screen and (max-width: 800px) {
+  .main-news{
+    height:60vh;
+  }
+}
 /**ANIMATION**/
 .rotate-vert-center {
   -webkit-animation: rotate-vert-center 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
