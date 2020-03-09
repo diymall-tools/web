@@ -25,7 +25,7 @@
     <img src="img/logo.svg" width="" height="60" alt="自助家五金DIY-LOGO">
   </a>
 </ul>
-<nav class="navbar navbar-expand-lg navbar-dark sticky-top"  >
+<nav class="navbar navbar1 navbar-expand-lg navbar-dark sticky-top"  >
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -73,7 +73,7 @@
 <div class="container card1 "><div class="company d-flex align-items-center"><div class="col-12 text-center"><h1>自助家DIY居家生活中心</h1><hr><p>生活中的好幫手</p><i class="fas fa-sort-down"></i></div></div></div>
 
 <!--SHOP-->
-<div class="container mb-5" id="about">
+<div class="container my-3" id="about">
   <div class="row shop d-flex justify-content-between ">
     <div class="col-md-3 col-12 text-center mt-5 shop01 ">
       <div class="map" >  <i class=" fas fa-map-marker-alt mt-3"></i></div>
@@ -113,12 +113,12 @@
   
 </div>
 <!--NEWS-->
-<div class="container-fulid" id="news">
-<h4 class="intro-title text-center"><strong>新情報</strong> </h4>
+<div class="container-fulid mt-5 pt-5" id="news">
+
 <div class="row" >
 
   <div class="col-md-6 col-12 main-news text-center"   >
-    
+    <h4 class="intro-title text-center pt-2"><strong>新情報</strong> </h4>
     <div class="main-newstext pt-2">
       
         <p><span class="btn btn-info mr-auto" href="#" >優惠活動</span>
@@ -164,7 +164,7 @@
 <!--PRODUCT-->
 
 
-<div class="row product my-5"  >
+<div class="row product my-5 py-5"  >
 <div class="container " id="product">
 <div class="row text-center ">
     <div class="pd col-md-4 col-6 product01 d-flex align-items-center justify-content-center photo"><a target="_blank" href="https://shopee.tw/shop/45560258/search?page=0&shopCollection=10954338"><i class="fas fa-tools"></i><p>五金工具</p></a></div>
@@ -360,7 +360,7 @@ $(function(){
       // 設定 hash 變數, 記錄目前的錨點
       var hash = this.hash;
       // 控制 html,body 執行 animate 動畫, 讓捲出的距離 = 目前錨點位置的 offset().top 座標
-      $('html, body').animate({ scrollTop: $(hash).offset().top }, 800, function(){
+      $('html, body').animate({ scrollTop: $(hash).offset().top }, 500, function(){
         // 將錨點名稱加到URL網址列的後方
         window.location.hash = hash;
       });
