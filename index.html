@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<title>自助家DIY居家生活中心</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	
-  <meta name="description"  content="自助家迄今已服務大台中地區30載，提供地區工農業生產工具、五金零件配件、收納裝潢、家電、汽車百貨、LED照明燈具、小家電、收納整理箱和人民生活用品，近年將陸續發展電商平台的銷售以服務更廣大的群眾，當然我們也會推出在地顧客的專屬優惠活動，請持續關注自助家DIY五金唷!" />
+  <meta name="description"  content="自助家迄今已服務大台中地區30載，提供地區工農業生產工具、五金零件配件、收納裝潢、家電、汽車百貨、LED照明燈具、小家電、收納整理箱、五金量販、機械五金、建材五金、水電材料、衛浴設備、居家美化、園藝材料、DIY家具、手工藝品、廚房設備和生活用品，近年將陸續發展電商平台的銷售以服務更廣大的群眾，目前經營有蝦皮賣場、松果購物、MOMO購物網。當然我們也會推出在地顧客的專屬實體店面的優惠活動，請持續關注自助家DIY五金唷!" />
   <!--FB-->
   <meta property="og:url"                content="http://diymall.com.tw" />
   <meta property="og:type"               content="website" />
@@ -43,8 +43,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="bookmark" href="img/logo.ico"/>
 <style>
-  
+
+body {
+-moz-user-select : none;
+-webkit-user-select: none;
+}
+nav.black  {
+      background: #549ba4;
+      color:white;
+}
 </style>
+<script type="text/javascript">
+function iEsc(){ return false; }
+function iRec(){ return true; }
+function DisableKeys() {
+if(event.ctrlKey || event.shiftKey || event.altKey) {
+window.event.returnValue=false;
+iEsc();}
+}
+document.ondragstart=iEsc;
+document.onkeydown=DisableKeys;
+document.oncontextmenu=iEsc;
+if (typeof document.onselectstart !="undefined")
+document.onselectstart=iEsc;
+else{
+document.onmousedown=iEsc;
+document.onmouseup=iRec;
+}
+function DisableRightClick(qsyzDOTnet){
+if (window.Event){
+if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+iEsc();}
+else
+if (event.button == 2 || event.button == 3){
+event.cancelBubble = true
+event.returnValue = false;
+iEsc();}
+}
+</script>
+<!--EMAIL-->
+<script src="https://smtpjs.com/v3/smtp.js">
+
+</script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -55,7 +95,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  
 <ul class="nav justify-content-center">
   <a class="navbar-brand" href="#">
-    <img src="img/logo.svg" width="" height="60" alt="自助家五金DIY-LOGO">
+    <img src="img/logo.svg" width="" height="100" alt="自助家五金DIY-LOGO">
   </a>
 </ul>
 <nav class="navbar navbar1 navbar-expand-lg navbar-dark shadow-lg sticky-top"  >
@@ -63,8 +103,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto ml-auto">
+  <div class="collapse navbar-collapse pullRightLeft" id="navbarText">
+    <ul class="navbar-nav mr-auto ml-auto ">
       <li class="nav-item">
         <a class="nav-link hvr-overline-from-center" href="#">自助家</a>
       </li>
@@ -78,60 +118,188 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a class="nav-link hvr-overline-from-center" href="#product">優產品</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link hvr-overline-from-center" href="#contact">聯絡我</a>
+        <a class="nav-link hvr-overline-from-center" href="#container">聯絡我</a>
       </li>
     </ul>
    
   </div>
 </nav>
-<!-- SLIDER -->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="img/banner01.jpg" class="d-block w-100 " alt="自助五金BANNER01-家具組裝">
-      
+
+<!--SWIPER-->
+<div class="swiper-container main-slider loading" >
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/newopen.jpg)">
+        <img src="img/newopen.jpg" class="entity-img" />
+      </figure>
+      <div class="content" style="top: 20%;">
+        <p class="title text-white">20200625自助家豐原店全新開幕</p>
+        <span class="caption text-white">自助家於豐南街77號全新開幕，歡迎蒞臨</span>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="img/banner02.jpg" class="d-block w-100" alt="自助五金BANNER02-汽車百貨">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/news01-g.jpg)">
+        <img src="img/news01-g.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">2020自助家30週年慶</p>
+        <span class="caption">2020自助家30週年慶:愛你愛你一整年，全年優惠不間斷!</span>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="img/banner03.jpg" class="d-block w-100" alt="自助五金BANNER03-裝潢施工">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/news_shoppee.jpg)">
+        <img src="img/news_shoppee.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">自助家蝦皮免運</p>
+        <span class="caption">於自助家蝦皮賣場購物滿599，運費0元。</span>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img src="img/banner04.jpg" class="d-block w-100" alt="自助五金BANNER04-五金工具">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/06.jpg);background-position: 0% 10%;">
+        <img src="img/06.jpg" class="entity-img" />
+      </figure>
+      <div class="content" style="top: 20%;">
+        <p class="title text-white">購物滿額大摸彩</p>
+        <span class="caption text-white">購物滿500送券，好禮大方抽。(大獎:咖啡機、PORTER包、氣炸鍋...等)10/22統一開獎！-2020/04/17-2020/10/20</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/banner05.jpg)">
+        <img src="img/banner05.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">居家粉刷、牆面翻新</p>
+        <span class="caption">各式漆類產品，水性漆、油漆、噴漆...</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/banner04-s.jpg)">
+        <img src="img/banner04-s.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title text-white">家庭木工</p>
+        <span class="caption text-white">多樣板材及五金工具</span>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/banner01-s.jpg)">
+        <img src="img/banner01-s.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title text-white">千項商品歡迎選購</p>
+        <span class="caption text-white">五金產品種類最齊全，歡迎到門市尋寶</span>
+      </div>
     </div>
   </div>
-  
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev swiper-button-white"></div>
+  <div class="swiper-button-next swiper-button-white"></div>
 </div>
-<div class="container card1 "><div class="company d-flex align-items-center"><div class="col-12 text-center"><h1>自助家DIY居家生活中心</h1><hr><p>生活中的好幫手</p><i class="fas fa-sort-down"></i></div></div></div>
+
+<!-- Thumbnail navigation -->
+<div class="swiper-container nav-slider loading" >
+  <div class="swiper-wrapper" role="navigation">
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/newopen.jpg)">
+        <img src="img/newopen.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">豐原店新開幕</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/news01-g.jpg)">
+        <img src="img/news01-g.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">30周年慶</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/news_shoppee.jpg)">
+        <img src="img/news_shoppee.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">蝦皮滿額免運</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/06.jpg)">
+        <img src="img/06.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title text-white">滿額抽獎</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/banner05.jpg)">
+        <img src="img/banner05.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">居家粉刷</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/banner04-s.jpg)">
+        <img src="img/banner04-s.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">家庭木作</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <figure class="slide-bgimg" style="background-image:url(img/banner01-s.jpg)">
+        <img src="img/banner01-s.jpg" class="entity-img" />
+      </figure>
+      <div class="content">
+        <p class="title">千項商品</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!--SHOP-->
-<div class="container my-3" id="about">
-  <div class="row shop d-flex justify-content-between ">
-    <div class="col-md-3 col-12 text-center mt-5 shop01 ">
-      <div class="map" >  <i class=" fas fa-map-marker-alt mt-3"></i></div>
-      <img class="d-block w-100 mt-5" src="img/shop01.png" alt="自助家五金潭子店">
-      <h4 class="my-3"><strong class="text-white">潭子店</strong> </h4>
+<div class="container-fulid mb-5 " >
+  <div class="row shop d-flex justify-content-around ml-lx-3 ml-0" id="about"><!--ABOUT-->
+    <div class="col-xl-2 col-12 text-center shop01 p-3 ">
+      
+      <img class="d-block w-100  " src="img/shop01.png" alt="自助家五金潭子店">
+      
      
-      <p><a href="tel:04-25313000"><i class="fas fa-phone pr-2"></i>04-2531-3000</a></p>
+      <p class="mt-3"><strong style="color:#26585e;font-size: 28px;">潭子店·</strong> <a href="tel:04-25313000">04-2531-3000</a></p>
       <p><a target="_blank" href="https://goo.gl/maps/whq7uJfXUU2DaFhPA"><i class="fas fa-map-marked-alt pr-2"></i>潭子區中山路一段55號</a></p>
+      <h6 class="bg-info border border-info rounded-pill text-white">8:30-22:00</h6>
     </div>
-    <div class="col-md-3 col-12 text-center mt-5 shop04">
-       <div class="map" >  <i class="fas fa-map-marker-alt mt-3"></i></div>
-      <img class="d-block w-100 mt-5" src="img/shop04.png" alt="自助家五金健行店">
-      <h4 class="my-3"><strong class="text-white">健行店</strong> </h4>
-      <p><a href="tel:04-22036198"><i class="fas fa-phone pr-2"></i>04-2203-6198</a></p>
+
+    <div class="col-xl-2 col-12 text-center  shop01 p-3">
+      
+
+      <img class="d-block w-100" src="img/shop02.png" alt="自助家五金豐原店">
+     
+      <p class="mt-3"><strong style="color:#26585e;font-size: 28px;">豐原店·</strong><a href="tel:04-25313000">04-2513-1038</a></p>
+      <p><a target="_blank" href="https://goo.gl/maps/whq7uJfXUU2DaFhPA"><i class="fas fa-map-marked-alt pr-2"></i>豐原區豐南街77號</a></p><h6 class="bg-danger border border-danger rounded-pill text-white">𝓒𝓞𝓜𝓜𝓘𝓝𝓖 𝓢𝓞𝓞𝓝<!--𝓝𝓔𝓦 𝓞𝓟𝓔𝓝𝓘𝓝𝓖--></h6></div>
+    
+    <div class="col-xl-2 col-12 text-center shop01 p-3">
+      
+      <img class="d-block w-100 " src="img/shop04.png" alt="自助家五金健行店">
+     
+      <p class="mt-3"><strong style="color:#26585e;font-size: 28px;">健行店·</strong><a href="tel:04-22036198">04-2203-6198</a></p>
       <p><a target="_blank" href="https://goo.gl/maps/dcACdfBwgshJzu6k6"><i class="fas fa-map-marked-alt pr-2"></i>北區健行路611號</a></p>
+      <h6 class="bg-info border border-info rounded-pill text-white">8:30-22:00</h6>
     </div>
-    <div class="col-md-3 col-12 text-center mt-5 shop06">
-       <div class="map" >  <i class="fas fa-map-marker-alt mt-3"></i></div>
-      <img class="d-block w-100 mt-5" src="img/shop06.png" alt="自助家五金東興店">
-      <h4 class="my-3"><strong class="text-white">東興店</strong> </h4>
-      <p><a href="tel:04-24723826"><i class="fas fa-phone pr-2"></i>04-2472-3826</a></p>
-      <p><a target="_blank" href="https://goo.gl/maps/a8uEW4WSLyJZSZVj9"><i class="fas fa-map-marked-alt pr-2"></i>南屯區五權西路二段62號</a></p>
+    <div class="col-xl-2 col-12 text-center  shop01 p-3">
+      
+      <img class="d-block w-100 " src="img/shop06.png" alt="自助家五金東興店">
+      
+      <p class="mt-3"><strong style="color:#26585e;font-size: 28px;">東興店·</strong> <a href="tel:04-24723826">04-2472-3826</a></p>
+      <p><a target="_blank" href="https://goo.gl/maps/a8uEW4WSLyJZSZVj9"><i class="fas fa-map-marked-alt pr-2"></i>五權西路二段62號</a></p><h6 class="bg-info border border-info rounded-pill text-white">8:30-22:00</h6>
     </div>
   </div>
+</div>
   <!--INTRO-->
+ 
+  <div class="container border-top  border-info " >
   <div class="row my-5 d-flex align-items-center">
 
       <div class="intro-img-body col-md-4 col-12">
@@ -142,25 +310,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="intro-text mt-3">&emsp; 自助家DIY居家中心成立於民國79年, 是國內最早成立的第一家居家DIY專賣店，自此帶動國內DIY居家修繕的風氣。2020自助家邁入第30個年頭，為回饋在地顧客的長久支持，今年將陸續推出許多相關優惠活動，未來將不定期更新各項特惠資訊，歡迎大家多多關注我們。</p>
       </div>
   </div>
-
-  
 </div>
+  
+
 <!--NEWS-->
-<div class="container-fulid mt-5 pt-5 " id="news">
+<div class="container-fulid  " id="news" style="padding-top:60px;">
 
 <div class="row " style="width: 100%;">
 
-  <div class="col-md-6 col-12 main-news text-center"   >
+  <div class="col-md-6 col-12 main-news text-center"  style="width:100%" >
     <h3 class="intro-title text-center pt-2"><strong>新情報</strong> </h3>
     <div class="main-newstext pt-2">
       
         <p><span class="btn btn-info mr-auto" href="#" ><i class="fas fa-tags text-white mr-2"></i>優惠活動</span>
           2020自助家30週年慶:愛你愛你一整年，全年優惠不間斷!
-        </p>
-        <p class="blockquote-footer">活動期間 <cite title="Source Title">2020/01/01-2020/12/31</cite></p>
+        
+        <div class="blockquote-footer">活動期間 <cite title="Source Title">2020/01/01-2020/12/31</cite></div></p>
     </div>
   </div>
-  <div class="col-md-6 col-12 p-md-0 pt-2 ">
+  <div class="col-md-5 col-12 p-md-0 pt-2 ">
     <div class="row d-flex align-items-center p-md-0 p-1 ">
       <div class="col-md-3 col-6" ><img clss="d-block w-100" src="img/news02.jpg" alt="自助家週年慶園藝商品特價中"></div>
       <div class="col-md-8 col-6">
@@ -196,20 +364,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 <!-- Swiper -->
-  <div class="swiper-container" id="swiper-container3">
+  
+  <div class="swiper-container news_cus pb-5" id="swiper-container3">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
         <div class="">
          <div class=" mb-3 bg-light" >
           <div class="row no-gutters">
             <div class="col-md-8">
-              <img src="img/news-philip.jpg" class="card-img  w-100" alt="...">
+              <img src="img/discount03.jpg" class="card-img  w-100" alt="PHILIPS-DISCOUNT">
             </div>
             <div class="col-md-4 d-flex align-items-center">
               <div class="card-body">
                 <h5 class="btn btn-warning text-white"><i class="text-white fas fa-gifts mr-2"></i>廠商加碼贈</h5>
                 <p class="card-text"><strong>30週年慶</strong></p> 
-                <p>飛利浦檯燈，原價一台1388元，兩台特價1998元(平均999/1台)。</p>
+                <p>檯燈兩台特價1998元(平均999/1台)。</p>
                 <p class="card-text"><small class="text-muted">2020/04/17-2020/10/20</small></p>
               </div>
             </div>
@@ -222,7 +391,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class=" mb-3 bg-light" >
              <div class="row no-gutters">
                 <div class="col-md-8">
-                  <img src="img/news-lolat.jpg" class="card-img w-100" alt="...">
+                  <img src="img/discount01.jpg" class="card-img w-100" alt="LOLAT-DISCOUNT">
                 </div>
                 <div class="col-md-4 d-flex align-items-center">
                   <div class="card-body">
@@ -241,7 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class=" mb-3 bg-light" >
              <div class="row no-gutters">
                 <div class="col-md-8">
-                  <img src="img/news-suli.jpg" class="card-img w-100" alt="...">
+                  <img src="img/discount02.jpg" class="card-img w-100" alt="SULI-DISCOUNT">
                 </div>
                 <div class="col-md-4 d-flex align-items-center">
                   <div class="card-body">
@@ -257,17 +426,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       
     </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+ <!-- Add Arrows -->
+    <div class="swiper-button-next news_cus"></div>
+    <div class="swiper-button-prev news_cus"></div>
   </div>
-
 
 <!--PRODUCT-->
 
+<div class="container-fulid "  id="product" style="padding-top:23px;">
 
-<div class="row product my-5 py-5"  style="width: 100vw">
-<div class="container " id="product">
+<div class="row product my-5  "  style="width: 100%;margin-left:0.5px;" >
+<div class="container" >
 <div class="row text-center ">
     <div class="pd col-md-4 col-6 product01 d-flex align-items-center justify-content-center photo"><a target="_blank" href="https://shopee.tw/shop/45560258/search?page=0&shopCollection=10954338"><i class="fas fa-tools"></i><p>五金工具</p></a></div>
     <div class="pd col-md-4 col-6 product02 d-flex align-items-center justify-content-center"><a target="_blank" href="https://shopee.tw/shop/45560258/search?page=0&shopCollection=10990451"><i class="fas fa-blender"></i><p>家電產品</p></a></div>
@@ -281,111 +450,128 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 </div>
-    <!-- Swiper -->
+
+</div>
+    
+ <!-- Swiper -->
  
     <div class="container">
-  <div class="swiper-container row" id="swiper-container2" style="width:100%;height:220px;">
+  <div class="swiper-container1 product_case " id="swiper-container2" style="width:100%;height:220px;">
         <div class="swiper-wrapper" id="myimg1">
-            <div class="swiper-slide active-slider" ><img id="myPicture" src="" alt="自助五金產品-蓮蓬頭、水龍頭、沐浴龍頭" style="width: 100%;height: 100%;">
-                slider1</div>
-            <div class="swiper-slide" ><img id="myPicture1" src="" alt="自助五金產品-LED燈泡" style="width: 100%;height: 100%;">
-                slider2</div>
-            <div  class="swiper-slide"><img id="myPicture2" src="" alt="自助五金產品-水槽" style="width: 100%;height: 100%;">
-                slider3</div>
-            <div class="swiper-slide" ><img id="myPicture3" src="" alt="自助五金產品-手推車" style="width: 100%;height: 100%;">
-                slider4</div>
+            <div class="swiper-slide active-slider" ><img id="myPicture" src="" alt="自助五金產品-蓮蓬頭、水龍頭、沐浴龍頭" >
+                </div>
+            <div class="swiper-slide" ><img id="myPicture1" src="" alt="自助五金產品-LED燈泡" >
+                </div>
+            <div  class="swiper-slide"><img id="myPicture2" src="" alt="自助五金產品-水槽" >
+                </div>
+            <div class="swiper-slide" ><img id="myPicture3" src="" alt="自助五金產品-手推車" >
+                </div>
              
            
         </div>
     </div>
   </div>
-
-  <!--FORM-->
-  <div class="container my-5 p-5 rounded contact" id="contact">
-    <h4 class="intro-title text-white"><strong class="text-white">聯絡我-(留言僅於工作天回覆)</strong> </h4>
-    <iframe name="iframe_redirect" id="iframe_redirect" style="display:none;" onload="if(typeof sent_redirect!='undefined'){window.location='http://www.diymall.com.tw/success.html';}"></iframe>
-    <form onsubmit="sent_redirect=true" target="iframe_redirect" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfrUzyaG6SqHyn02O3XgUXbiw1rPa48NynQsV6ZB6lqAWmx6g/formResponse" method="POST">
-  <div class="form-row  py-2">
-    <div class="col-md-6 py-2 col-12">
-      <input type="text" class="form-control myborder" placeholder="姓名" name="entry.1863741612" required>
-    </div>
-    <div class="col-md-6 col-12 py-2">
-      <input type="phonenumber" class="form-control myborder" id="inputNumber" placeholder="連絡電話" name="entry.1434302394">
-    </div>
-  </div>
-  <div class="form-row py-2">
-    <div class="col">
-      <input type="email" class="form-control myborder" id="inputEmail" placeholder="電子信箱" name="entry.1142318017" required></div>
-    </div>
-      <div class="form-row py-2">
-        <div class="col">
-          <select class="custom-select myborder"   name="entry.1038420760" required>
-          <option value="0" selected disabled>留言主題</option>
-          <option value="網路客">線上購物疑問(如:產品規格、退換貨、發票、貨運...)</option>
-          <option value="店面客">實體店面購物問題</option>
-          <option value="廠商">廠商產品推廣</option>
-          <option value="其他">其他</option>
-          </select>
-        </div>
-      </div>
-  <div class="form-row py-2">
-    <div class="col">
-      <textarea class="form-control  myborder" id="FormControlTextarea1" rows="3" placeholder="內容" name="entry.892127942"></textarea></div>
-  </div>
-  <button class="btn shop06 col my-2 text-white btn-info" type="submit" name="button" value="submit">送出</button>
-</form>
-  </div>
-
-<footer class="mt-5 pt-5 " id="footer" >
-  
-  <div class="row " style="width: 99vw">
+     
+   
     
-    <div class="col-md-2 col-6 p-md-5">
+  
+  <!--FORM-->
+  <div class="container shadow-lg rounded contact mt-5 border-info bg-info " id="container" style="padding-top:70px;">
+    <i class="far fa-comments fa-10x" id="ff"></i>
+    <div class='title-bg w-100 text-center '>
+    <h4 class="intro-title text-white ">聯絡我</h4><p class="text-white">(留言僅於工作天回覆)</p>
+    
+    </div>
+ <iframe name="iframe_redirect" id="iframe_redirect" style="display:none;" onload="if(typeof sent_redirect!='undefined'){window.location='http://www.diymall.com.tw/success.html';}"></iframe>
+  <form onsubmit="sent_redirect=true" target="iframe_redirect" action="https://formspree.io/moqkdjvq"
+  method="POST" id="contact_form" class="bg-white">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text"  placeholder="姓名" id="name_input" name="姓名" value="" required>
+    </div>
+    
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="電話"  id="telephone_input" value="" name="電話">
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="E-mail"  id="email_input" name="E-mail" value="" required>
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Subject line"  id="subject_input" name="留言主題" required>
+        <option disabled hidden selected>留言主題</option>
+        <option value="網路客" value="線上購物疑問(如:產品規格、退換貨、發票、貨運...)">線上購物疑問(如:產品規格、退換貨、發票、貨運...)</option>
+          <option value="店面客" value="實體店面購物問題">實體店面購物問題</option>
+          <option value="廠商" value="廠商產品推廣">廠商產品推廣</option>
+          <option value="其他" value="其他">其他</option>
+      </select>
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea  placeholder="內容" id="message_input" cols="30" rows="5" name="內容" required></textarea>
+    </div>
+    <div class="submit d-flex justify-content-end">
+      <input type="submit" value="送出留言" id="form_button" name="button"/>
+    </div>
+  </form>
+  <!-- // End form -->
+  </div>
+
+<footer class="mt-5 pt-5 pl-xl-5 pl-3" id="footer" >
+  
+  <div class="row " style="width: 99%">
+    
+    <div class="col-xl-2 col-6 p-md-5 ml-xl-5 ml-0">
       <h5 class="text-center text-white">線上購物</h5>
 <hr>
-<ul class="text-center">
+<ul class="">
   <li class="mt-3">
-    <a target="_blank" class="rounded px-2 py-1" style="background-color: #FB5533;" href="https://shopee.tw/diytseng">蝦皮購物</a>
+    <a target="_blank" class="rounded px-3 py-1" style="background-color: #FB5533;" href="https://shopee.tw/diytseng">蝦皮購物</a>
   </li>
   <li class="mt-3">
-    <a target="_blank" class="rounded px-2 py-1" style="background-color: #F7422F;" href="https://www.pcone.com.tw/search?q=%E8%87%AA%E5%8A%A9%E5%AE%B6#ref=d_header_search_userinput">松果購物</a>
+    <a target="_blank" class="rounded px-3 py-1" style="background-color: #F7422F;" href="https://www.pcone.com.tw/search?q=%E8%87%AA%E5%8A%A9%E5%AE%B6#ref=d_header_search_userinput">松果購物</a>
   </li>
   <li class="mt-3">
     <a target="_blank" class="rounded px-2 py-1" style="background-color: #D62671;" href="https://www.momoshop.com.tw/search/searchShop.jsp?keyword=%E8%87%AA%E5%8A%A9%E5%AE%B6&searchType=1&curPage=1&_isFuzzy=0&showType=chessboardType">MOMO購物</a>
   </li>
 </ul>
     </div>
-    <div class="col-md-2 col-6 p-md-5">
+    <div class="col-xl-2 col-6 p-md-5">
       <h5 class="text-center text-white">自助集團</h5>
       <hr>
 <ul>
-  <li class="mt-3">
-    <a href="mailto:diymall001@gmail.com">自助家·潭子店<i class="pl-5 fas fa-envelope"></i></a>
+  <li class="mt-1">
+    <a href="mailto:diymall001@gmail.com">自助·潭子店<i class="pl-2 fas fa-envelope fa-lg"></i></a>
   </li>
-  <li class="mt-3">
-    <a href="mailto:diymall004@gmail.com">自助家·健行店<i class="pl-5 fas fa-envelope"></i></a>
+  <li class="mt-1">
+    <a href="mailto:diymall004@gmail.com">自助·健行店<i class="pl-2 fas fa-envelope fa-lg"></i></a>
   </li>
-  <li class="mt-3">
-    <a href="mailto:diymall006@gmail.com">自助家·東興店<i class="pl-5 fas fa-envelope"></i></a>
+  <li class="mt-1">
+    <a href="mailto:diymall006@gmail.com">自助·東興店<i class="pl-2 fas fa-envelope fa-lg"></i></a>
+  </li>
+  <li class="mt-1">
+    <a href="mailto:diy23854036@gmail.com">自助·豐原店<i class="pl-2 fas fa-envelope fa-lg"></i></a>
   </li>
 </ul>
     </div>
-    <div class="col-md-4 col-12 p-5">
+    <div class="col-xl-4 col-12 p-5">
       <h5 class="text-center text-white">取得聯繫</h5>
 <hr>
-<ul>
+<ul class="text-xl-left text-center">
   <li>
-    客服電話：<a href="tel:04-25319699">04-2531-9699#14</a>
+    電話：<a href="tel:04-25319699">04-2513-1038</a>
   </li>
   <li>
-    公司地址：<a target="_blank" href="https://goo.gl/maps/whq7uJfXUU2DaFhPA">台中市潭子區中山路一段55號</a>
+    地址：<a target="_blank" href="https://goo.gl/maps/whq7uJfXUU2DaFhPA">台中市豐原區豐南街77號</a>
   </li>
   <li>
-    聯絡信箱：<a href="mailto:diymall888@gmail.com">diymall888@gmail.com</a>
+    信箱：<a href="mailto:diymall888@gmail.com">diymall888@gmail.com</a>
   </li>
 </ul>
     </div>
-    <div class="col-md-4 col-12 py-5 text-center" >
+    <div class="col-xl-3 col-12 py-5 text-center" >
       <div class="">
         <a class="navbar-brand mt-3" href="#">
           <img src="img/logo.svg" width="" height="100" alt="自助家五金DIY-LOGO">
@@ -407,42 +593,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>	
 <script src="https://unpkg.com/swiper/js/swiper.js"></script>
- <!-- Initialize Swiper -->
+  <!-- Initialize Swiper -->
   <script>
-        var mySwiper2 = new Swiper('#swiper-container2', {
+    
+ var mySwiper2 = new Swiper('#swiper-container2', {
             watchSlidesProgress: true,
             watchSlidesVisibility: true,
+            slidesPerView: 2,
+            spaceBetween: 10,
             
-            slidesPerView: 5,
              breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40
-    }
-  }
+        '@0.00': {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        '@0.75': {
+          slidesPerView: 4,
+          spaceBetween: 0,
+        },
+        
+      }
 
-        })
+        });
+
+
+
+        
     </script>
-    <!--NEWS Initialize Swiper -->
+    
   <script>
     var swiper01 = new Swiper('#swiper-container3', {
       slidesPerView: 1,
       spaceBetween: 10,
       // init: false,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next.news_cus',
+        prevEl: '.swiper-button-prev.news_cus',
       },
       breakpoints: {
         '@0.00': {
@@ -461,7 +647,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         window.onload = choosePic;
         setInterval("choosePic()",3000);
 function choosePic() {
-    var myPix = new Array("img/product/p (1).jpg","img/product/p (2).jpg","img/product/p (3).jpg","img/product/p (4).jpg","img/product/p (5).jpg","img/product/p (6).jpg","img/product/p (7).jpg","img/product/p (8).jpg","img/product/p (9).jpg","img/product/p (10).jpg","img/product/p (11).jpg","img/product/p (12).jpg","img/product/p (13).jpg","img/product/p (14).jpg","img/product/p (15).jpg","img/product/p (16).jpg","img/product/p (17).jpg","img/product/p (18).jpg","img/product/p (19).jpg","img/product/p (20).jpg","img/product/p (21).jpg","img/product/p (22).jpg","img/product/p (23).jpg","img/product/p (24).jpg","img/product/p (25).jpg","img/product/p (26).jpg","img/product/p (27).jpg","img/product/p (28).jpg","img/product/p (29).jpg","img/product/p (30).jpg","img/product/p (31).jpg","img/product/p (32).jpg","img/product/p (33).jpg","img/product/p (34).jpg","img/product/p (35).jpg","img/product/p (36).jpg","img/product/p (37).jpg","img/product/p (38).jpg","img/product/p (39).jpg","img/product/p (40).jpg","img/product/p (41).jpg","img/product/p (42).jpg","img/product/p (43).jpg","img/product/p (44).jpg","img/product/p (45).jpg","img/product/p (46).jpg","img/product/p (47).jpg","img/product/p (48).jpg","img/product/p (49).jpg","img/product/p (50).jpg","img/product/p (51).jpg","img/product/p (52).jpg","img/product/p (53).jpg","img/product/p (54).jpg","img/product/p (55).jpg","img/product/p (56).jpg","img/product/p (57).jpg","img/product/p (58).jpg","img/product/p (59).jpg","img/product/p (60).jpg","img/product/p (61).jpg","img/product/p (62).jpg","img/product/p (63).jpg","img/product/p (64).jpg","img/product/p (65).jpg","img/product/p (66).jpg","img/product/p (67).jpg","img/product/p (68).jpg","img/product/p (69).jpg","img/product/p (70).jpg","img/product/p (71).jpg","img/product/p (72).jpg","img/product/p (73).jpg","img/product/p (74).jpg","img/product/p (75).jpg","img/product/p (76).jpg","img/product/p (77).jpg","img/product/p (78).jpg","img/product/p (79).jpg","img/product/p (80).jpg","img/product/p (81).jpg","img/product/p (82).jpg","img/product/p (83).jpg","img/product/p (84).jpg","img/product/p (85).jpg","img/product/p (86).jpg","img/product/p (87).jpg","img/product/p (88).jpg","img/product/p (89).jpg","img/product/p (90).jpg","img/product/p (91).jpg","img/product/p (92).jpg","img/product/p (93).jpg","img/product/p (94).jpg","img/product/p (95).jpg","img/product/p (96).jpg","img/product/p (97).jpg","img/product/p (98).jpg","img/product/p (99).jpg","img/product/p (100).jpg","img/product/p (101).jpg","img/product/p (102).jpg","img/product/p (103).jpg","img/product/p (104).jpg","img/product/p (105).jpg","img/product/p (106).jpg","img/product/p (107).jpg","img/product/p (108).jpg","img/product/p (109).jpg","img/product/p (110).jpg","img/product/p (111).jpg","img/product/p (112).jpg","img/product/p (113).jpg","img/product/p (114).jpg","img/product/p (115).jpg","img/product/p (116).jpg","img/product/p (117).jpg","img/product/p (118).jpg","img/product/p (119).jpg","img/product/p (120).jpg","img/product/p (121).jpg","img/product/p (122).jpg","img/product/p (123).jpg","img/product/p (124).jpg","img/product/p (125).jpg","img/product/p (126).jpg","img/product/p (127).jpg","img/product/p (128).jpg","img/product/p (129).jpg","img/product/p (130).jpg","img/product/p (131).jpg","img/product/p (132).jpg","img/product/p (133).jpg","img/product/p (134).jpg","img/product/p (135).jpg","img/product/p (136).jpg","img/product/p (137).jpg","img/product/p (138).jpg","img/product/p (139).jpg","img/product/p (140).jpg","img/product/p (141).jpg","img/product/p (142).jpg","img/product/p (143).jpg","img/product/p (144).jpg","img/product/p (145).jpg","img/product/p (146).jpg","img/product/p (147).jpg","img/product/p (148).jpg","img/product/p (149).jpg","img/product/p (150).jpg","img/product/p (151).jpg","img/product/p (152).jpg","img/product/p (153).jpg","img/product/p (154).jpg","img/product/p (155).jpg","img/product/p (156).jpg","img/product/p (157).jpg","img/product/p (158).jpg","img/product/p (159).jpg","img/product/p (160).jpg");
+    var myPix = new Array("img/product/p (1).jpg","img/product/p (2).jpg","img/product/p (3).jpg","img/product/p (4).jpg","img/product/p (5).jpg","img/product/p (6).jpg","img/product/p (7).jpg","img/product/p (8).jpg","img/product/p (9).jpg","img/product/p (10).jpg","img/product/p (11).jpg","img/product/p (12).jpg","img/product/p (13).jpg","img/product/p (14).jpg","img/product/p (15).jpg","img/product/p (16).jpg","img/product/p (17).jpg","img/product/p (18).jpg","img/product/p (19).jpg","img/product/p (20).jpg","img/product/p (21).jpg","img/product/p (22).jpg","img/product/p (23).jpg","img/product/p (24).jpg","img/product/p (25).jpg","img/product/p (26).jpg","img/product/p (27).jpg","img/product/p (28).jpg","img/product/p (29).jpg","img/product/p (30).jpg","img/product/p (31).jpg","img/product/p (32).jpg","img/product/p (33).jpg","img/product/p (34).jpg","img/product/p (35).jpg","img/product/p (36).jpg","img/product/p (37).jpg","img/product/p (38).jpg","img/product/p (39).jpg","img/product/p (40).jpg","img/product/p (41).jpg","img/product/p (42).jpg","img/product/p (43).jpg","img/product/p (44).jpg","img/product/p (45).jpg","img/product/p (46).jpg","img/product/p (47).jpg","img/product/p (48).jpg","img/product/p (49).jpg","img/product/p (50).jpg","img/product/p (51).jpg","img/product/p (52).jpg","img/product/p (53).jpg","img/product/p (54).jpg","img/product/p (55).jpg","img/product/p (56).jpg","img/product/p (57).jpg","img/product/p (58).jpg","img/product/p (59).jpg","img/product/p (60).jpg","img/product/p (61).jpg","img/product/p (62).jpg","img/product/p (63).jpg","img/product/p (64).jpg","img/product/p (65).jpg","img/product/p (66).jpg","img/product/p (67).jpg","img/product/p (68).jpg","img/product/p (69).jpg","img/product/p (70).jpg","img/product/p (71).jpg","img/product/p (72).jpg","img/product/p (73).jpg","img/product/p (74).jpg","img/product/p (75).jpg","img/product/p (76).jpg","img/product/p (77).jpg","img/product/p (78).jpg","img/product/p (79).jpg","img/product/p (80).jpg","img/product/p (81).jpg","img/product/p (82).jpg","img/product/p (83).jpg","img/product/p (84).jpg","img/product/p (85).jpg","img/product/p (86).jpg","img/product/p (87).jpg","img/product/p (88).jpg","img/product/p (89).jpg","img/product/p (90).jpg","img/product/p (91).jpg","img/product/p (92).jpg","img/product/p (93).jpg","img/product/p (94).jpg","img/product/p (95).jpg","img/product/p (96).jpg","img/product/p (97).jpg","img/product/p (98).jpg","img/product/p (99).jpg","img/product/p (100).jpg","img/product/p (101).jpg","img/product/p (102).jpg","img/product/p (103).jpg","img/product/p (104).jpg","img/product/p (105).jpg","img/product/p (106).jpg","img/product/p (107).jpg","img/product/p (108).jpg","img/product/p (109).jpg","img/product/p (110).jpg","img/product/p (111).jpg","img/product/p (112).jpg","img/product/p (113).jpg","img/product/p (114).jpg","img/product/p (115).jpg","img/product/p (116).jpg","img/product/p (117).jpg","img/product/p (118).jpg","img/product/p (119).jpg","img/product/p (120).jpg","img/product/p (121).jpg","img/product/p (122).jpg","img/product/p (123).jpg","img/product/p (124).jpg","img/product/p (125).jpg","img/product/p (126).jpg","img/product/p (127).jpg","img/product/p (128).jpg","img/product/p (129).jpg","img/product/p (130).jpg","img/product/p (131).jpg","img/product/p (132).jpg","img/product/p (133).jpg","img/product/p (134).jpg","img/product/p (135).jpg","img/product/p (136).jpg","img/product/p (137).jpg","img/product/p (138).jpg","img/product/p (139).jpg","img/product/p (140).jpg","img/product/p (141).jpg","img/product/p (142).jpg","img/product/p (143).jpg","img/product/p (144).jpg","img/product/p (145).jpg","img/product/p (146).jpg","img/product/p (147).jpg","img/product/p (148).jpg","img/product/p (149).jpg","img/product/p (150).jpg","img/product/p (151).jpg","img/product/p (152).jpg","img/product/p (153).jpg","img/product/p (154).jpg","img/product/p (155).jpg","img/product/p (156).jpg","img/product/p (157).jpg","img/product/p (158).jpg","img/product/p (159).jpg","img/product/p (160).jpg","img/product/p (161).jpg","img/product/p (162).jpg","img/product/p (163).jpg","img/product/p (164).jpg","img/product/p (165).jpg","img/product/p (166).jpg","img/product/p (167).jpg","img/product/p (168).jpg","img/product/p (169).jpg","img/product/p (170).jpg","img/product/p (171).jpg","img/product/p (172).jpg","img/product/p (173).jpg","img/product/p (174).jpg","img/product/p (175).jpg","img/product/p (176).jpg","img/product/p (177).jpg");
     var randomNum = Math.floor((Math.random() * myPix.length));
      document.getElementById("myPicture").src = myPix[randomNum];
      var randomNum1 = Math.floor((Math.random() * myPix.length));
@@ -493,6 +679,138 @@ $(function(){
     } // if end 
   }); // click end
 });
+</script>
+
+<script>
+ 
+// Params
+let mainSliderSelector = '.main-slider',
+    navSliderSelector = '.nav-slider',
+    interleaveOffset = 0.5;
+
+// Main Slider
+let mainSliderOptions = {
+      loop: true,
+      speed:1000,
+      autoplay:{
+        delay:3000
+      },
+      loopAdditionalSlides: 10,
+      grabCursor: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      on: {
+        init: function(){
+          this.autoplay.stop();
+        },
+        imagesReady: function(){
+          this.el.classList.remove('loading');
+          this.autoplay.start();
+        },
+        slideChangeTransitionEnd: function(){
+          let swiper = this,
+              captions = swiper.el.querySelectorAll('.caption');
+          for (let i = 0; i < captions.length; ++i) {
+            captions[i].classList.remove('show');
+          }
+          swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
+        },
+        progress: function(){
+          let swiper = this;
+          for (let i = 0; i < swiper.slides.length; i++) {
+            let slideProgress = swiper.slides[i].progress,
+                innerOffset = swiper.width * interleaveOffset,
+                innerTranslate = slideProgress * innerOffset;
+           
+            swiper.slides[i].querySelector(".slide-bgimg").style.transform =
+              "translateX(" + innerTranslate + "px)";
+          }
+        },
+        touchStart: function() {
+          let swiper = this;
+          for (let i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].style.transition = "";
+          }
+        },
+        setTransition: function(speed) {
+          let swiper = this;
+          for (let i = 0; i < swiper.slides.length; i++) {
+            swiper.slides[i].style.transition = speed + "ms";
+            swiper.slides[i].querySelector(".slide-bgimg").style.transition =
+              speed + "ms";
+          }
+        }
+      }
+    };
+let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+
+// Navigation Slider
+let navSliderOptions = {
+      loop: true,
+      loopAdditionalSlides: 10,
+      speed:1000,
+      spaceBetween: 5,
+      slidesPerView: 5,
+      centeredSlides : true,
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+      direction: 'vertical',
+      on: {
+        imagesReady: function(){
+          this.el.classList.remove('loading');
+        },
+        click: function(){
+          mainSlider.autoplay.stop();
+        }
+      }
+    };
+let navSlider = new Swiper(navSliderSelector, navSliderOptions);
+
+// Matching sliders
+mainSlider.controller.control = navSlider;
+navSlider.controller.control = mainSlider;
+
+</script>
+<!--EMAIL-->
+<script>
+ Email.send({
+    let fields = {
+        name: document.querySelector("#name").value,
+        tel: document.querySelector("#tel").value,
+      };
+      let body = '姓名：' + fields.name + '<br>' + '電話：' + fields.tel + '<br>';
+    Host : "smtp.yourisp.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+</script>
+<script>
+   $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
 </script>
 </body>
 </html>
