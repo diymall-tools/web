@@ -193,16 +193,11 @@
       height: auto;
 
     }
-    .swiper-container.product_case{
-     width: 220px;
-      height: 220PX;
-      clear: both;
-      
-      
-    }
+   
     #myimg1 img{
-      height: 220px;
-      width: 220px;
+      height: auto;
+      width: 100%;
+      object-fit: contain;
     }
     /*PRODUCT*/
     .product{
