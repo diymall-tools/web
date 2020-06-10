@@ -42,11 +42,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <link rel="bookmark" href="img/logo.ico"/>
 <style>
+
   body{
     background-image:url(img/coffee-bg02.jpg);
 background-repeat: repeat;
 
-  
+  -moz-user-select : none;
+-webkit-user-select: none;
   
   }
 .carousel{
@@ -117,6 +119,34 @@ background-repeat: repeat;
 }
 
 </style>
+<script type="text/javascript">
+function iEsc(){ return false; }
+function iRec(){ return true; }
+function DisableKeys() {
+if(event.ctrlKey || event.shiftKey || event.altKey) {
+window.event.returnValue=false;
+iEsc();}
+}
+document.ondragstart=iEsc;
+document.onkeydown=DisableKeys;
+document.oncontextmenu=iEsc;
+if (typeof document.onselectstart !="undefined")
+document.onselectstart=iEsc;
+else{
+document.onmousedown=iEsc;
+document.onmouseup=iRec;
+}
+function DisableRightClick(qsyzDOTnet){
+if (window.Event){
+if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+iEsc();}
+else
+if (event.button == 2 || event.button == 3){
+event.cancelBubble = true
+event.returnValue = false;
+iEsc();}
+}
+</script>
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -143,6 +173,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p class="lead mb-0"><a href="#" class="font-weight-bold "><i class="fas fa-chevron-down text-white"></i></a></p>
     </div>
   </div>
+  <!--
 <nav class="navbar navbar-expand-lg navbar-light ">
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -155,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a class="p-2 text-muted" href="#">咖啡生活</a>
     </div>
   </div>
-</nav>
+</nav>-->
 
 
 
